@@ -1,0 +1,33 @@
+* {
+    font-family: "Bodoni MT", serif;
+    background-color: black;
+}
+
+div {
+    width: 100em;
+    align-content: center;
+    padding: 3em;
+    margin: 1em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    gap: 2em;
+}
+
+li {
+    height: 40vh;
+    flex-grow: 1;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
