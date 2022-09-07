@@ -1,33 +1,96 @@
 * {
-    font-family: "Bodoni MT", serif;
+    font-family: Arial, serif;
     background-color: black;
 }
 
-div {
-    width: 100em;
-    align-content: center;
-    padding: 3em;
-    margin: 1em;
+.header {
 }
 
-ul {
+.header-nav-top {
+    right: 30%;
+}
+
+.header-nav-bot {
+    text-align: center;
+}
+
+.logo {
+    width: 100pt;
+    height: 100pt;
+    border-radius: 50%;
+}
+
+.searchbar {
+    float: right;
+    color: lightgray;
+    background-color: #333333;
+    height: 20pt;
+    width: 20%;
+
+}
+
+.navigation-top {
+    list-style-type: none;
+    margin: 5pt;
+    width: 50%;
+    overflow: hidden;
+    top: 1pt;
+    position: absolute;
+    display: inline-block;
+}
+
+.navigation-top a {
+    float: left;
+    display: inline-block;
+    color: lightgray;
+    padding: 14px 8px;
+    text-decoration: none;
+}
+
+.navigation-top a:hover {
+    background-color: #ddd;
+    color: red;
+}
+
+.navigation-bottom {
+    list-style-type: none;
+    margin: 5pt;
+    width: 50%;
+    overflow: hidden;
+    font-size: 12pt;
+    background-color: #333;
+    display: inline-block;
+}
+
+.navigation-bottom a {
+    float: left;
+    display: block;
+    color: lightgray;
+    padding: 14px 8px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.navigation-bottom a:hover {
+    background-color: #ddd;
+    color: red;
+}
+
+.image-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    gap: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10pt;
 }
 
-li {
-    height: 40vh;
-    flex-grow: 1;
+.main-content {
+    align-content: center;
 }
 
-img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+.image-container div {
+    flex-shrink: 1;
 }
-
+.image-container div img {
+    width: 100%;
+    height: auto;
+}
